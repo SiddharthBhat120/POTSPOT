@@ -1,0 +1,28 @@
+# data: the dataset is downloaded by a script; trips are personal recordings
+data/
+runs/
+site/
+*.mp4
+*.mov
+*.gpx
+!demo/demo_trip.mp4
+!demo/demo_trip.gpx
+!backend/tests/fixtures/*.gpx
+
+# weights: only the two small models the app needs are committed
+*.pt
+!models/pothole.pt
+!models/privacy.pt
+
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+frontend/node_modules/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

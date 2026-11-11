@@ -1,0 +1,193 @@
+{
+ "video_s": 42.0,
+ "frames_processed": 630,
+ "raw_detections": 1238,
+ "tracks": 29,
+ "tracks_joined": 5,
+ "records": 22,
+ "labelled_potholes": 35,
+ "found": 19,
+ "recall": 0.543,
+ "double_counted": 0,
+ "false_records": 3,
+ "processing_s": 41.3,
+ "privacy_blurred": 4,
+ "details": [
+  {
+   "track": 1,
+   "t": 1.13,
+   "photo": "img-305.jpg",
+   "iou": 0.6,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 7,
+   "t": 3.67,
+   "photo": "img-408.jpg",
+   "iou": 0.9,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 9,
+   "t": 7.8,
+   "photo": "img-465.jpg",
+   "iou": 0.7,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 12,
+   "t": 8.33,
+   "photo": "img-465.jpg",
+   "iou": 0.84,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 13,
+   "t": 7.07,
+   "photo": "img-465.jpg",
+   "iou": 0.9,
+   "verdict": "found",
+   "severity": "medium"
+  },
+  {
+   "track": 14,
+   "t": 11.47,
+   "photo": "img-524.jpg",
+   "iou": 0.83,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 15,
+   "t": 10.73,
+   "photo": "img-524.jpg",
+   "iou": 0.54,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 16,
+   "t": 14.27,
+   "photo": "img-567.jpg",
+   "iou": 0.86,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 18,
+   "t": 12.73,
+   "photo": "img-524.jpg",
+   "iou": 0.0,
+   "verdict": "false",
+   "severity": "large"
+  },
+  {
+   "track": 19,
+   "t": 11.93,
+   "photo": "img-524.jpg",
+   "iou": 0.39,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 20,
+   "t": 12.27,
+   "photo": "img-524.jpg",
+   "iou": 0.41,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 23,
+   "t": 18.13,
+   "photo": "img-682.jpg",
+   "iou": 0.75,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 27,
+   "t": 24.6,
+   "photo": "img-842.jpg",
+   "iou": 0.69,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 28,
+   "t": 24.87,
+   "photo": "img-842.jpg",
+   "iou": 0.65,
+   "verdict": "found",
+   "severity": "medium"
+  },
+  {
+   "track": 29,
+   "t": 28.07,
+   "photo": "img-952.jpg",
+   "iou": 0.68,
+   "verdict": "found",
+   "severity": "medium"
+  },
+  {
+   "track": 30,
+   "t": 28.47,
+   "photo": "img-952.jpg",
+   "iou": 0.71,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 31,
+   "t": 29.33,
+   "photo": "img-952.jpg",
+   "iou": 0.84,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 32,
+   "t": 28.47,
+   "photo": "img-952.jpg",
+   "iou": 0.17,
+   "verdict": "false",
+   "severity": "medium"
+  },
+  {
+   "track": 33,
+   "t": 29.07,
+   "photo": "img-952.jpg",
+   "iou": 0.29,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 34,
+   "t": 31.27,
+   "photo": "img-952.jpg",
+   "iou": 0.0,
+   "verdict": "false",
+   "severity": "medium"
+  },
+  {
+   "track": 35,
+   "t": 31.73,
+   "photo": "img-986.jpg",
+   "iou": 0.54,
+   "verdict": "found",
+   "severity": "large"
+  },
+  {
+   "track": 38,
+   "t": 39.33,
+   "photo": "img-1131.jpg",
+   "iou": 0.96,
+   "verdict": "found",
+   "severity": "large"
+  }
+ ]
+}
