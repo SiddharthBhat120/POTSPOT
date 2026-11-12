@@ -89,7 +89,7 @@ export default function MapView({ potholes, routes, heat, selectedId, onSelect, 
     if (fitted.current !== fitKey) {
       const pts = [...potholes.map((p) => [p.lat, p.lon]),
         ...(routes?.features || []).flatMap((f) => f.geometry.coordinates.map(([lon, lat]) => [lat, lon]))]
-      if (pts.length) { m.fitBounds(L.latLngBounds(pts).pad(0.15), { maxZoom: 17 }); fitted.current = fitKey }
+      if (pts.length) { m.fitBounds(L.latLngBounds(pts).pad(0.15), { maxZoom: 17, animate: false }); fitted.current = fitKey }
     }
   }, [potholes, heat, fitKey]) // eslint-disable-line react-hooks/exhaustive-deps
 
