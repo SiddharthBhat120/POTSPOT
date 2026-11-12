@@ -31,7 +31,7 @@ class Settings:
     horizon_frac: float = float(os.getenv("HORIZON_FRAC", "0.45"))
     max_upload_mb: int = int(os.getenv("MAX_UPLOAD_MB", "1500"))
     offline: bool = os.getenv("POTSPOT_OFFLINE", "0") == "1"   # no Nominatim or map tiles
-    contact: str = os.getenv("NOMINATIM_CONTACT", "https://github.com/SiddharthBhat120/POTSPOT")
+    contact: str = os.getenv("NOMINATIM_CONTACT", "https://github.com/sidxcodes/POTSPOT")
 
     @property
     def db_url(self) -> str:

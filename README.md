@@ -4,7 +4,7 @@
 
 PotSpot is the "RoadScan" project: a computer-vision pipeline that finds potholes in dashcam video with a fine-tuned YOLO11 model, follows each one across frames so it is counted once, places it on the road using the GPS track from the same ride, and merges repeat sightings across rides. The result is a Leaflet map and a PDF report grouped by road.
 
-[Live read-only demo](https://siddharthbhat120.github.io/POTSPOT/)
+[Live read-only demo](https://sidxcodes.github.io/POTSPOT/)
 
 ![PotSpot map with potholes coloured by severity along the demo route](docs/screenshots/map.png)
 
