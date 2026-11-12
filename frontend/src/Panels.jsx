@@ -123,7 +123,7 @@ export function Detail({ id, onClose }) {
           <div className="pad">
             <h2 ref={head} tabIndex="-1">{p.road || 'Unnamed road'}</h2>
             <dl className="facts">
-              <div><dt>Width (estimate)</dt><dd>{p.width_m ? `≈ ${p.width_m.toFixed(2)} m` : 'unknown'}</dd></div>
+              <div><dt>Width (estimate)</dt><dd>{p.width_m ? `≈ ${p.width_m.toFixed(2)} m` : 'not measured'}</dd></div>
               <div><dt>Model confidence</dt><dd>{Math.round(p.confidence * 100)}%</dd></div>
               <div><dt>Seen</dt><dd>{p.sightings}× on {p.trips} ride{p.trips === 1 ? '' : 's'}</dd></div>
               <div><dt>Last seen</dt><dd>{fmtDate(p.last_seen)}</dd></div>

@@ -54,6 +54,7 @@ class PipelineConfig:
     annotate: bool = True
     blur_privacy: bool = True
     camera: CameraModel = field(default_factory=CameraModel)
+    measure_width: bool = True  # False when the flat-road camera model does not fit the footage
 
 
 @dataclass
@@ -297,7 +298,7 @@ def run(video: str | Path, out_dir: str | Path, gpx: str | Path | None = None, o
         if len(obs) < cfg.min_frames:
             continue
         best = best_observation(obs, w, h)
-        sev, width = estimate([o.box for o in obs], w, h, cfg.camera)
+        sev, width = estimate([o.box for o in obs], w, h, cfg.camera, cfg.measure_width)
         crop, local_box, _ = best_crops[tid]
         if cfg.blur_privacy:
             crop, n = anonymise(crop, privacy, protect=[local_box])

@@ -49,9 +49,13 @@ def width_m(box: tuple[float, float, float, float], frame_w: int, frame_h: int, 
 
 
 def estimate(observations: list[tuple[float, float, float, float]], frame_w: int, frame_h: int,
-             cam: CameraModel = CameraModel()) -> tuple[str, float | None]:
-    """Severity and width from all sightings of one pothole (median of the usable ones)."""
-    widths = [w for b in observations if (w := width_m(b, frame_w, frame_h, cam)) is not None]
+             cam: CameraModel = CameraModel(), measure: bool = True) -> tuple[str, float | None]:
+    """Severity and width from all sightings of one pothole (median of the usable ones).
+
+    measure=False skips the camera model (for footage it does not describe, such as the zoomed demo
+    ride) and ranks by how much of the frame the pothole covers, with no width.
+    """
+    widths = [w for b in observations if (w := width_m(b, frame_w, frame_h, cam)) is not None] if measure else []
     if not widths:
         # Fall back on the largest box: better than nothing, but flagged by width=None
         x1, y1, x2, y2 = max(observations, key=lambda b: (b[2] - b[0]) * (b[3] - b[1]))

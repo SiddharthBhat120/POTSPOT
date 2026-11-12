@@ -70,7 +70,10 @@ def process_trip(trip_id: str, video: Path, gpx: Path, offset_mode: str, offset_
         track = Track.from_file(gpx, offset)
         _update(trip_id, offset_s=offset, offset_method=method, offset_detail=detail,
                 started_at=track.start + timedelta(seconds=offset), message="Finding potholes")
-        cfg = PipelineConfig(sample_fps=settings.sample_fps,
+        with get_session() as s:
+            is_demo = bool(s.get(Trip, trip_id).is_demo)
+        # The demo zooms into web photos taken with many cameras, so the flat-road size model does not apply.
+        cfg = PipelineConfig(sample_fps=settings.sample_fps, measure_width=not is_demo,
                              camera=CameraModel(height_m=settings.camera_height_m, horizon_frac=settings.horizon_frac))
 
         def progress(p: float, msg: str) -> None:

@@ -64,3 +64,10 @@ def test_merge_into_existing():
     first = merge([_s(*a, "t1")])
     again = merge([_s(*move(*a, 0, 2), "t2")], existing=first)
     assert len(again) == 1 and again[0].count == 2
+
+
+def test_estimate_without_camera_model_ranks_by_area():
+    from ml.severity import estimate
+    big = [(100.0, 400.0, 700.0, 700.0)]
+    label, width = estimate(big, 1280, 720, measure=False)
+    assert (label, width) == ("large", None)

@@ -143,7 +143,7 @@ Every saved photo is a crop of the best frame, and people, cars, motorbikes, bus
 - **Size is an estimate, not a measurement.** It assumes a flat road, a known mount height and horizon. Slopes, bumps and a tilted phone move the horizon and the estimate with it. Depth cannot be seen by one camera. Treat small / medium / large as a ranking hint and check on site.
 - **GPS drift.** Phone GPS is good to 3 to 10 m. Under trees or between tall buildings it can wander onto a parallel road, and the 8 m merge radius can join two close potholes or split one.
 - **Clock drift.** The sync finds one offset for the whole ride. If the phone's video clock drifts over a long ride, positions slowly slide; splitting long rides into 10 to 15 minute clips keeps this small.
-- **The demo ride is simulated.** It is made from held-out test photos with a zoom to fake approaching each pothole, on a simulated GPX track near Mangaluru that does not follow a real road, so dots can sit off the street on the map. Web photos were taken with many cameras, so its size classes lean towards large. Real-road numbers need your own rides.
+- **The demo ride is simulated.** It is made from held-out test photos with a zoom to fake approaching each pothole, on a simulated GPX track near Mangaluru that does not follow a real road, so dots can sit off the street on the map. Web photos were taken with many cameras and the zoom breaks the flat-road size model, so the demo shows no widths and ranks potholes by how much of the frame they cover. Real-road numbers need your own rides.
 
 ## Stack
 
